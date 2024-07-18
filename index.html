@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxwell Beats - Professional Beat Maker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        #hero {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            background-image: url("images/logo.jpg"); /* Add your hero image URL here */
+            background-size: cover;
+            background-position: center;
+        }
+
+        #hero .btn {
+            background-color: #e8491d;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .beats-section, .about-section, .contact-section {
+            padding: 2rem 1rem;
+            background-color: #fff;
+            margin: 1rem 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .beats-section .beats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .beat-item {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .beat-item img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .beat-item h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-section img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-section form label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .contact-section form input, .contact-section form textarea {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-section form .btn {
+            background-color: #e8491d;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer .social-links {
+            margin-top: 1rem;
+        }
+
+        footer .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Maxwell Beats</h1>
+            <nav>
+                <ul>
+                    <li><a href="#beats">Beats</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Welcome to Maxwell Beats</h2>
+                <p>Experience superior sound quality and meticulous precision.</p>
+                <a href="#beats" class="btn">Listen Now</a>
+            </div>
+        </section>
+
+        <section id="beats" class="beats-section">
+            <div class="container">
+                <h2>Featured Beats</h2>
+                <div class="beats-grid">
+                    <div class="beat-item">
+                        <img src="images/daybreak.jpg" alt="Daybreak"> <!-- Add your beat image URL here -->
+                        <h3>Daybreak</h3>
+                        <audio controls>
+                            <source src="audio/Daybreak.mp3" type="audio/mpeg"> <!-- Add your audio file URL here -->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="beat-item">
+                        <img src="images/soul.jpg" alt="Soul"> <!-- Add your beat image URL here -->
+                        <h3>Soul</h3>
+                        <audio controls>
+                            <source src="audio/soul.mp3" type="audio/mpeg"> <!-- Add your audio file URL here -->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="beat-item">
+                        <img src="images/immerse.jpg" alt="Immerse"> <!-- Add your beat image URL here -->
+                        <h3>Immerse</h3>
+                        <audio controls>
+                            <source src="audio/Immerse.mp3" type="audio/mpeg"> <!-- Add your audio file URL here -->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="beat-item">
+                        <img src="images/mine.jpg" alt="Mine"> <!-- Add your beat image URL here -->
+                        <h3>Mine</h3>
+                        <audio controls>
+                            <source src="audio/Mine.mp3" type="audio/mpeg"> <!-- Add your audio file URL here -->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <img src="images/max.jpg" alt="Maxwell"> <!-- Add your image URL here -->
+                <p>Hi, I'm Maxwell, a professional beat maker with over 3 years of experience in crafting diverse, high-quality beats. My passion for music drives me to create sounds that resonate with audiences worldwide.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>If you like what you hear and want to collaborate, don't hesitate to reach out!</p>
+                <form action="mailto:aniakorkosi@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Maxwell Beats. All rights reserved.</p>
+            <p
